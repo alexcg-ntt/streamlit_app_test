@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import json
 def community_page(alg_sel_ft, alg_sel_urg, alg_sel_sent):
     # Mantener el logo original
     st.logo("assets/Logos_NTT_Mediolanum.png", size="large")
@@ -177,7 +178,7 @@ def classify(pregunta, typology, family_banker, vinculacion, alg_selected):
                 'vinculacion': vinculacion}
     )
 
-    return req.text
+    return json.loads(req.text)
 
 if __name__ == "__main__":
     main()
