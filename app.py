@@ -2,7 +2,7 @@ import streamlit as st
 
 def community_page(alg_sel_ft, alg_sel_urg, alg_sel_sent):
     # Mantener el logo original
-    #st.logo("assets\\Logos_NTT_Mediolanum.png", size="large")
+    st.logo("assets\\Logos_NTT_Mediolanum.png", size="large")
     
     # Lista de tipologías
     list_typo = ["Pendiente Determinación", "Cancelación de cuentas", "Mi remuneración", 'CONSULTA: no pertinente', "Exclusivo para Expertos Protección", "Eventos", "Sugerencias", "Comision liquidacion", "CRM", "Herencias", "Mediolanum a tu medida", "Otros", "Alta nuevo cliente", "MIFID-PPA-ASG", "Crédito/Préstamo", "MIF / Fondos nacionales", "MIL", 'Llamada Entrante Número Rosso']
